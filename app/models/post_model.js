@@ -6,7 +6,7 @@ const PostSchema = new Schema({
   content: String,
   cover_url: String,
 }, {
-  // http://mongoosejs.com/docs/guide.html
+  // referred to http://mongoosejs.com/docs/guide.html
   timestamps: {
     createdAt: 'created_at',
   },
