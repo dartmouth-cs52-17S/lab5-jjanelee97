@@ -28,7 +28,6 @@ export const getPosts = (req, res) => {
 };
 
 export const getPost = (req, res) => {
-  console.log(req.params.id);
   Post.findById(req.params.id)
     .then((result) => {
       res.json(result);
