@@ -1,6 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
 
 const PostSchema = new Schema({
+  username: String,
   title: String,
   tags: String,
   content: String,

@@ -2,6 +2,7 @@ import Post from '../models/post_model';
 
 export const createPost = (req, res) => {
   const post = new Post({
+    username: req.user.username,
     title: req.body.title,
     tags: req.body.tags,
     content: req.body.content,
